@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScanFeast cafe - Food Ordering</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .navbar-brand { font-weight: bold; }
+        .section-padding { padding: 60px 0; }
+        .food-img { width: 100%; border-radius: 10px; }
+        .footer { background: #222; color: white; padding: 15px; text-align: center; }
+
+
+        .menu-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            margin-bottom: 20px;
+        }
+        .menu-card:hover {
+            transform: scale(1.05);
+        }
+        .menu-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .order-btn {
+            margin-top: 10px;
+        }
+    </style>
+
+
+
+
+   
+</head>
+<body>
+
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">ScanFeast cafe</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#order">Food Order</a></li>
+                <li class="nav-item"><a class="nav-link" href="#review">Review</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+            
+                </div>
+              </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Home Section -->
+<section id="home" class="section-padding text-center bg-light">
+    <div class="container">
+        <h1 class="mb-3">Welcome to ScanFeast cafe</h1>
+        <p>Order your favorite meals easily by scanning the QR code.</p>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://t3.ftcdn.net/jpg/03/24/73/92/360_F_324739203_keeq8udvv0P2h1MLYJ0GLSlTBagoXS48.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://media.istockphoto.com/id/1829241109/photo/enjoying-a-brunch-together.jpg?s=2048x2048&w=is&k=20&c=0UD2e_KMbkkMcx4j9ZaxGf-z1nMHxch9hi3_0BQmuAo=" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://media.gettyimages.com/id/1303502055/photo/woman-consulting-the-restaurant-menu-with-qr-code.jpg?s=612x612&w=0&k=20&c=tYV7fi1-ewF0E-7Qo6IO91ebsEzUiWU8yfJRBdOv_o0=" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+              </div>
+          </div>
+
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section-padding text-center">
+    <div class="container">
+        <h2>About Us</h2>
+        <p>feast cafe is a digital food ordering system that allows customers to scan a QR code, browse the menu, and place their orders seamlessly.</p>
+    </div>
+</section>
+
+
+
+    <!-- Menu Sections -->
+    <section id="menu" class="section-padding bg-light text-center">
+     <div class="row mt-4">
+        
+        <!-- Vegetarian -->
+        <h3 class="text-success mt-4">Vegetarian</h3>
+        <div class="col-md-4">
+            <div class="menu-card">
+                <img src="https://www.ruchiskitchen.com/wp-content/uploads/2020/12/Paneer-Butter-Masala-9.jpg.webp" alt="Vegetarian Dish">
+                <h5>Paneer Butter Masala</h5>
+                <p>Delicious paneer cooked in rich butter gravy.</p>
+                <button class="btn btn-success order-btn">Order Now</button>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="menu-card">
+                <img src="https://i.ytimg.com/vi/Do7ZdUodDdw/maxresdefault.jpg" alt="Vegetarian Biryani">
+                <h5>Vegetable Biryani</h5>
+                <p>Fragrant rice cooked with fresh vegetables and spices.</p>
+                <button class="btn btn-success order-btn">Order Now</button>
+            </div>
+          
+        </div>
+
+        <!-- Non-Vegetarian -->
+        <h3 class="text-danger mt-3">Non-Vegetarian</h3>
+        <div class="col-md-4">
+            <div class="menu-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-Zr0ypC_m73Ji7QCGUUdPEugHWakbZMhgGw&s" alt="Chicken Dish">
+                <h5>Butter Chicken</h5>
+                <p>Classic chicken dish in creamy tomato gravy.</p>
+                <button class="btn btn-danger order-btn">Order Now</button>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="menu-card">
+                <img src="https://www.licious.in/blog/wp-content/uploads/2022/06/chicken-hyderabadi-biryani-01.jpg" alt="Chicken Biryani">
+                <h5>Chicken Biryani</h5>
+                <p>Spicy and aromatic basmati rice cooked with chicken.</p>
+                <button class="btn btn-danger order-btn">Order Now</button>
+            </div>
+        </div>
+
+        <!-- Crispy -->
+        <h3 class="text-warning mt-3">Crispy</h3>
+        <div class="col-md-4">
+            <div class="menu-card">
+                <img src="https://www.shutterstock.com/image-photo/homemade-french-fries-ketchup-roasted-260nw-2489017835.jpg" alt="Fries">
+                <h5>Crispy French Fries</h5>
+                <p>Golden crispy fries with a touch of salt.</p>
+                <button class="btn btn-warning order-btn">Order Now</button>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="menu-card">
+                <img src="https://www.licious.in/blog/wp-content/uploads/2019/05/Drumsticks-liquidation-plan-05.jpg" alt="Crispy Chicken">
+                <h5>Crispy Chicken Wings</h5>
+                <p>Spicy and crunchy fried chicken wings.</p>
+                <button class="btn btn-warning order-btn">Order Now</button>
+            </div>
+        </div>
+
+        <!-- Shakes -->
+        <h3 class="text-primary mt-3">Shakes</h3>
+        <div class="col-md-4">
+            <div class="menu-card">
+                <img src="https://biteswithbri.com/wp-content/uploads/2021/09/StrawberryOreoMilkshake-blog-7.jpg" alt="Oreo Shake">
+                <h5>Oreo Shake</h5>
+                <p>Thick creamy shake blended with Oreo.</p>
+                <button class="btn btn-primary order-btn">Order Now</button>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="menu-card">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTEhMWFhUWGBgYFxcWFRcXFRcYFxYXFxgXGBYYHSggGBolIBcVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGxAQGy0lHyUtLS0tLS0tLS0tLS0tLS0tLS0tLS0rLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSstLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAFAAIDBAYBBwj/xABFEAABAwIEAgcFBAkCBAcAAAABAAIRAyEEBRIxQVEGEyJhcYGRMqGxwfAHFELRFSMzUnKCsuHxYpJDc8LSFiQ0U1SDo//EABoBAAMBAQEBAAAAAAAAAAAAAAECAwAEBQb/xAAsEQACAgEDAgMIAwEAAAAAAAAAAQIRAxIhMQRBEyJRBRQyYXGBkfBCUtEV/9oADAMBAAIRAxEAPwAKugLsJBcp2E4ITlA3dTkrGGp+pMCcVjDJXQlpunaVjBno5m3UPDyYa32vAXlZXKM/GKqVnnd9So8Duc8mPIEKxmNEvpVKbTBe0tnxWT+zWjqzKhQeDFR7mPHEdhwPmN/EJ4q0ycpU0bnUFCQp8fg3Uaj6T/aY4tPfGx8CIPmq5KmVRxOBTQVyUAj3FIKMrl1rMPJShNqUXNjU0idpEAxvCc0opp7oBwrkpxSJCIBocpdShcnArGHhyc1ygJXNSxiw56aLqIuT2OWDZ1ybqSlLSsaySUkkljEJSAWvxXRhrqkMsO5UMf0ZqM9m6ItgNjU5wT3YZzfaBC4QgEYCnKA7qwFjDWpxSY1P0LGIeqUfRrKxRzSni/whpJ7nkaJ/2knxVtphNp1YIPqtbXAGkzXfaVh2k0cQ3eoC13eWgFp9CfQLEalW6c9KyamFw82panu4yXw1o9Af96jySjiqQdWxTHHCkNc+pI7THkBrqTNzvaBAi8bIyXc2P0L7VHisQ1gvx4LQUckpdS7EuxdLqQC5pYHOe9o2EGNLzYab3K83xWMNRxJ3PCduQHPu96m+Dr6XEss9+EHBiyQZIEOtF5G0WBjbjdWmYgOL+RBIgFpkWkQZFzttB4CyBsqkEHnOpo7LSBtERPH/ADdT4I8HM1Bxa3eCJIMC2/f/AHXPJH0eLFhqtK/CNZiHRTNPUDpMkH8Jb7UT7JvtsQLG3aHqevjbOFUktDnNbrENLNBDm9XfVHZEG8u3ElBsswlRshj9LDs3VraRwIPLxReSONbHgdb03gtSitn+/voXiuQkfrYe4WXNS6kcI4U10NXA5OWMMKYSpimLGGSk1yc4JoYsYeCpQVxoUixjkpLq6sY9LwMlxceKu1WSutbAgJheUxIp4nLmP3asxneSNYJbZbPruaDZti6ZtxQSDbMM7AP30yEyIW5y4Md2YCMjolQqCXD0MI6GZ5EjzBin6tbPMOgzW3pvd4GCgOLyOtT4ah3IONDKaYGqsVbSr9UEe0CPFVy+k2X1n6KbRLnbmNoA4kkgeaAxgOnGXltUVhs+Ae5zRA9QB6Fe39EMBVr9HaVIkdY+jV0E3AJqVHUfQaFk24XD5jh8RSptFFjWtPX1yGgGNbDqJs6RBA/1C3HZ9HsUDgKuHa80+roOaxzTBYGsOlzT3QCqKVqmRlFp2jxFz8Rdr2VGNeJIcIZU0mzgA0ajPET4mydTw8249kgWuDd3G3C2612b1TUZRrY+s176rWjDtokta5kayatWoyGvdqAjuPer/RDHNDBSw1LWQ4Gqag1dUNexqaWgnk0CD3wSoT3Z6vT54Y8d8sy+a5PVpUaWJqsDadQwNTiXBwl127iRJ5xvCdkWGo13sp0nuL3OGohhDaY5kTLm7XBabneFvOm+V1MXSZSJgMcXAFrSxziCJJEOBgkWKr9D+jlShReHCiyoD2A0v0ER7TzBM+uym6a2GXtDKls6+hp+jPQ6nQaHPDKtQjtOiWk22B8PFG8J0aw4qmsaTNRgxpbpa4W1ARZxtPOAgWa55UwuHqFkOdA0TcTqA/NQfZp06+9sNKu5gr6uw0Bw1sFOm43cTqcC50jlHirY1ClsefmnmyXOTsLdJOihrzo6ljdNmtpNZU1TJPW3jhHZ5zIK8lDATU0h46swRUDQ/Vq0lpDXG4+gvoLVYmLx8uJXk/SyoMTordUKJbNOsQRDK0thtW06T+F9wfSWyJJ7MXC21VGVauhydWpOaYcIP1BB4jvUUoBJSmrrSm1FjEiQKiDk4LGJWuTw5QBOasYnhJNlJYx7BC49ohcxNZrRJKD4rHF1hsqURRXzjGxLWrP0mOc61ytHRy81N9kWwmVMZwujVBsHZXgdAk7os3EFPdSTOqS7g2H/AHk8SocVjmtF1RzLFhgtus3XxLnG6ysNItZg5lQ7LJ9IaFFjC0l4bUq0+uc0Nc4tYDoa3V7DA4ySL9o8LI5XeWtnnaVUdgGYhobUJDdQJLTDoaZsRtO3mpTnUtI8VtZby3ojhXVWPq0y5jWNDaQMUhckufxeTNwTeLgod9pebtw1OsaBA69vUwBDRrbpdAG3ZDvMrU4fEN4WBsByAsEI6X5FhqzGsrP0mo4NYRE6jxvwAknuC0XugNNnlWW5bisbTa2k51RtFx0Ui4Q3XDnluq0y6b819B9GsMx+FbR1umkA3VDQ50CNTm7CYXjuMwtDLGA4fFl9So1zmtcxxDy12kFrmNtMEXsbHxP9BKOaOrU8S1pNM2cHxTZocRqAL7uNvwjcJ5u3xsGEfLzuejYjCvokEOa9vIgh3ukFSUaLakkM0nlN/wAlNXwdV76INVjGjVqYGlzqlrAPMBoEk7SYG10/FPp4dhfVLaYBI1Oe0AjgZMRPJTWN38gal9wLTwmHxLX0XVGkip1e+l+unDyGki9huOEqxlfQnCUKfUhktNTWNbiX69LRLXiC2zBtyKH51merqMVhiKvUuMhkv1se2DGg9pw3G/EcUe6O5scQx4rUxTr0ahbUp3tPapuE3gtLTPMFNjjHhDTlJKy3mmOp0GtNSoGhzmsFpc57nANaB33BttJtCsNwFGox2qkxwqNAfLQdYEwHcwJKq4rCtc/U68ezqAdodEamk3baZhWssedOki4PkQqJ+Yj/ABPN/tC6OU8MW1aLAxlRxDmizQ8guJA4aonyPNYtxXuPS3LRiMJVZ+INL2fxM7Q9YjwJXhOtCSplIStEoK6Sodae0oDjwU9pUcroKxiQuXZURKeDZYxJqSTUkDG5di3Pde6M4DAgQXIFkbYGp26OffU7kidBdkAWTg9C240KjmOfNYIBusnYNIer41rdyh+JzKRDVlDmuoySiWUfrDJ2TAolfhi8zcqbDZKSbo3Q0gQIUgqwhZgH0ky5rcK6PwlpH+4N+Dism06RAWzzrNGFj6U+20t8JESsHSq2vYix8oUckd7K4+AvlbNZEmAEul3Q04wUiIOlwkuNm05DnaRxcS1oVE4g/hWh6OB721JcQA21zEqcXTozQ7B41lFsQIbYWHDkpB0ncTAAHif7KKlk+sGXdrnKhGBNGo07jUJnvQvJ9Eaoh7Ls/Id2m2PIyoftD6JNzPDCk17WvY8Pa5wJEwQQQNgQfcotdFldxIAHCOJ8Eaow1pN79/AquKUlak7Ekldozn2e9GamCp1G1C2XOBhhJEhoBdfifNa12DpMc7Elv6zq9LnCZLG9oNIG8XjxPNZPNemVDB1KNGoHONQxqvDWzB4GXAHa3itf15AtcHZUg0aepuzA9GPtHGLxDMO6gA95g6XklsCSS0t2ABm/BehsgbIPjc0bTeHFg1G2qBqjiJ8tlPh84Y8dkExv3LKUbqzTV7pUgqRO/FeT5j0KDBLXFajo90ieMM3ryXP06gTuXPOoNnkNQG1gO5DcXj3O8EU1PdApxdGExGU1GnaVUdScNwVvHEFdp4Jr7aVtI2owIK7rXp9DovRI7TQqmP6G0YkW8EA6jz5hlTSiWK6OuaTpNkMr4Z7dwsGx89y6q8rqwTV08XFlx+PKpOKGZnmIYIBuoq2FoJY/P9DbG6y9XM3Ekkqk+qXGSp8JgC/cWVl5UT5COW13VHDktphceGAALMYbDhggKU1SEkpWOomrbnMcVSzPpVobAMkrJYzNdIsglSq5xkoxQsqNJTzVzy5xuRFvGT8lKyrLJ9f796C5VhXGZkAjcbg7g/XNPNWoxxiCD7Tdv5m/XxQlyUhwaCljQRH0FfoZsW0yxvE3M8BsFlnOJ2/NIAweakymg1mCzZ7DutDnma0xg+tNySGgA/iufkSvNGVCBGp3z9U+tinPaGPeS0XDY47E8ytbRvBTaDdPNw+JMEXv396PUekodoYYgADdYVlJp3cbjlEfkpGUWEAXuY3i/cQp20U8GLNvmvRdmYPZqJpdU9rmvBDnPt2hpPsjYSTvNoFxXTbpjXoYj7rgqg1YZrCWOAca+n2qRJFuzpNoJk8kQyzNarWtimXaSIhwDn9w1WnxKpVuiVOtW+9YoziHVRUd1UhoDBpZSFu00AAl0AuI4Cy6IPayHhu6fBM3PjimsxDQdNQAhjgQ5pO4g8OThYygtbpPj8O+pGALqWotY5hcBJEtBMOuAeQmCtg7Bvc5vYgNh3aESL7cjaVXxNN9TsH2A/X/ADBugAcmtaIHiZvdBR81s0mqpDejFUV29bVoGi5pIDX33a3tAkA827WvvKOVadKLgIUyi5vghWcZi6C0KkSUq5LFfFUus0tIWkyvDt0gheYUnnVKOZZnD2mAVShDf1KoaLoLjcYXSBsp8HTNTtP9FedhKYF0AGblD62G1Ogtt4I9insBhqpuxHciYofoZv7qSJfeSktRrMnnburEDdZTqi5191foY91Yy8yb2TS4avZ7rcFyePGKPS6zoJ4EpNpkmWZQXmYstEzL4EAJdGsVTbShxvK0tNlOJJCperc4k6M19yPALP51X0u0TC0fS/pOzDU9NIAvdYfmvMKmKc8lziSSkla4O7pOn8XeXBsRlLTpJNjB8URxWU0WN6xwsEF6OZsabBrGr4wjeOxYrUntaDETBXnrPOE1FnHLH53E7hcypdW40m+yPebD4+5BcTVaQLRzMT6j5hNyilooEfvPnyEj5Ljqd5Xp3ZSEaRFSeRsbevwUzqxO/u4qq6mJ7+6xT6ZM7+o+aw5ZpuF7m/O/pyVmm4fvD0KqU2u8/d7yrracRI+E+iw6RNhsOy36xoImOzJE7orhMPSH4+M2Z52soMFS4R8OPkjWGon6gIUOEMC2nw1u/l/MgIjTa2Z0AHm46iB3AADh3qnh6ZO1xba+4n6PertOkeR81REZIkdUmw8+HoOCTmNaL2hT02RcofmUPe06i037I2c0ATM2sXN2vZEhNXsgfj8Zqs3ZAsbQ1COK0FbCkcDG8xA8AYuqbWAn+8opom4sBMwJ5Ipk2UkP1uC0OWZa0jVuiGK0tbsi3YiIKldrGzyQV+YmoTBsocW5zzxA5KOhQiwCKQSdRhnISVew2HH4kQGJpsFmhEVgX7q/90rqL/ptnIeoXVgUeHZLXbqOowYsp8pLXVnCq/SLkLOYas2YcY71LmFRsCHST8F58sd+U+h63qI5YqHcP43OBOimJDTc/krWCzeoAGl3j8ljMPXjwRX75MneQ3yg7KqhpVFumxdPppxTLGdYN9R2uZPLkqWHoSIO6I0MUC6dQALrzyATcZh+sMsjVE24oSOxYMcFcEUMPh6hfY28dlfOMqjsB/cY3Q2i17XXkcxzXXu7UjdRlG3vR5MvZmubk9k/ya/DtiizxI+P90nC1lBlNacPpJ7Uz42BPxPqnNqLoiqSRxuOl6fQ71SfTo792/DvmU6b/X1P5Kek7mmMkS4fD2n/ABvfgr1LCh2k27jzkc+I22UNFwmw+vqEQoGIA4creixRFzC4QcPrn70Sp4Ueo39b+9UG1gCJJ7Vh6cLd3HmUSDzGwvFjtE3v4Tw+KKA7DuVVABB4fD/KfVq6nShlKrH1ZWmvVL2Odw3smc6Fncyqu6+iZOmX0yO97A9p/wDyj+dG8S61lh+mXSSjhqbGunrKhD2GTDDTI7R57gRx8kjBxuXBgnvqkMot1hx1PqXJ7RHZa4mB4HhsimHNSi/9ZTZoNjpAHj3HzXkmN6aFzi7rS5x3It7mwE7K/tFrU3RU/WUzYgxrb3tdz7jvzG6aOolLSz2HMcU2gzrqRdpkB8Xa0Gwc4bgTxuBfYWNb9KF25WRw+LNbD1tD5BHZjZ7KjTLY5GNu9ATnL24Zj7l1N3Vu5wfYJ9I80dW5tFo9QpuBUWMxVOldxAXnX/jB9OkXhpLtgIWOzXpDiq5/WOjuCZNMVwae56pmfTehTsDJWWx/TdzydGyw1DCkmXGT3qeq7SdKEpFMUNUqNF+na3NJAOvCSnqZ6XuWP+wNc5LVIXrWbfZxg3GKDnt8y4e9Z7N/s6rsbNFzag5bOVDz/GtmGpuU4qpuMwlSk7TUY5h7xH+VA4oONl4ZXFbFxmIhXMNjSNihuEwz6hhjS49y12U9BqztJqEMHEbmEksaOrF10oO2yIU6uJA6umXuBgkD5q3R6J4mQHt0873XpGSUaeFpaKbdvUlQio8kucN0kcXqDN7Um5PRwYbDU+pLm76Hub6aR+anfSG4t+fcu5sCKtUc3l3qB+aYam58Amo5NTluxzW/nb5R9XT28CqlUmQrDTYSf8IDouUnx3+auU61x3T7/wDCFUam/hKt06l1h0F8NWFzEEn1IAAIvyARTD1riDtw4X/wVn6FRX8NXM93kgGjRUal7jz8p+ZHkrtJ3CUGoP8AT6KJUKkwmTJyRYxB7JXjf2nYB1WrTINmMI9XH8l7FVMtK8Z+0HNC2sGASTTaf9xcnj8RHIl4bPP62HLd0xTVXucbp1LDTurakluccYOTpGq6I5m77vVpyewWx/C47eRn1RTCU5diacbtLhylp1BAMgaGisBxYB56hCP5Y6cQ8/6CD6Lkm7bPSxweNb8povZZWZ1RLwIHAhCcyw1I1HV2ARHs9/NQDEudTDNidjzV3B5Y59N2oi64W9Duz1/aeHxIqUFwZl1aTKo4yvLpRXNMCKbJO/BZ2obr0sTU1aPnHNwZa6zvSVbrElXQV95PeK+ZH/hjsjiuDHR8rqlgSYLXAq7Sw4JDeKxzFDMWtrjTVYHDhIv6rH4zoQ0uDqbyGE3aeHgvQ8zDabAGiXHY8u9BmUXH2jf3IWYWU4BlBoaxotxhH8O1zoiVHluWF1zYczx8EdY6nSFrRuSlboJzD5S4jtOge9EWChREGJ77krG5v00A7NM+Lj8lma3SaTvxuZ380VYCx0sd/wCaqEbEyPAgFDdVoUmYYoVS2p+8PgSFAXKZ1x4HkXvwT3A9xUJNypG96A6JaatMI+CqNfdSTJQKIvsMcERw3zQ6hUJEH33RHCi6A4YwZ9URww9yHYVEMOUUJIs13Q0leUdKcK11ZxIkta1o8APzlepY4/q3eCxWb4QOc4rN0RlwecYnCAHZDqpgrZY/Lp2CyuZ5dUDpAlMmmJCWiVl/os2RVJ27HxcT8AjXR9/7aodmtcfQINlk08I9xsXugDzj5K5WqmjgXnY1IHeQSJ+BQauRXWtP3BeHxJgAmyP5di26YG/G6xTMUtDko4lQzYNXJ6sPaMFBo5nNBz3d3JA6+XOW3LJ4Kpj3MYLgSrRloVI8VYnOVIx/6NfyXUb+/jkEk3jsv/z5fL8nrOEwpcYaPM8FLXq06RhvbqceQVXOOktNtOGDQ0Wnie4R8VhMX0xmzdDRzJ94G8qm7PONfXry6XGXngPkFfwmEYAHVCCf3Z28eZXmA6VtZJDi5x3MXQ3F9KqjvZnxJ+S1SeyDaPXs06SU6bT2h3Dj4ALz/O+mFWqYmG8h81i6+Z1HGSb+KbTp1ansgnwCMcdcgc/QJ4jMCdz71UOMHNQYnAvY2XAjxCqtYSnpCuTNxlVXVTYJtCvEIbkrCKbQf3fiERaoPk7ocD6bpKkLVC0pdYlKJFoHb6spmFVqdUypqbvBAdF/DuRPDzIQnDlGcEUBwthmiLn6+uaIYc3Q+jCu4VESSLGO9grO1qckzzWhxl2x4LP48FryPNJkRMqYjDA2hDquXg2ARF1XmmBhANQ7bN7zxPgPikQGZfOcBqNOm0WBn5KPP8rNUNpgSGRbhIEfMrRU6Qu88Plt71EcUWt0gCZJnxMp9TXAriY/B9HATeAidDAaD3Iu5wN1BUpTeVtTZtNENbFhosFjM2xuqobrYVaI4hZTN8qvLbJ41e5o5JQdoG9aku/oxySrURveZ+hqul7CaTXNmNIHhe6wj2r1HCsFaaJh2uQ20EOi3dvCymPyAgmBfiO8bhUTOBozGlT4SjqMc9kTblJ5IrhstY2OJ5o2CiTKuidhUeJbxHEf2WnwdCm0WAEW2UmXZqKdN2ppcQOyBu47BvwTsywZaA8DSHAamzOknceCnqd7jUU86oMq0nMgTBjxCwuGwltlq62J71FRpM3WbGicw4s3uaB7lIComPufFPSHVEeUyYScmQlZVFim5W2U1QYrFEoFIhLDoxhHWsgdByM4QoDBii5X8MhmHKKYNFCS4L4aIvzv5XQiphQ8uqEC548BsAr2NeA234oCFZXjm9SWvnVcQQRNyJ8xfzWk13IUQYsUmXJbPu95QfGYw1XBrZdHHYDzNvRFq9GhFqTf9sn1KrhgH4QGjhCGwu5VrYSoIa8sAieydXhJhU6tCLkwOau6xEDgoXUw+z5LeKVjIqscI5prx3KzQwLQ6Ggq1XwpggQfigFgKoLRCiGEBN78kQbhSNztwTCNpTXsIV/0b3BJWtYSQoJT6N4c9fJB7AJ53O313In0lwo6xtRv/EEkf6hY+tvej/R7L26qlrkCPLf4hDOldBzajBB0hrj7wuj+RydjKuo8I4W7+5VHUjqFpHdvuiNd20evJT4bLHPMzE7W/I3TilSjRfwHrz+S02UVTUaaVT2oNjxGyhpYXSIi43MCTzG9/wC6c1rg8FpMtcCLmN7zFzx9UJKzJmZzrBGlUc08Lg/6Tt48kHdViy9U6TZQKtJtVouALcdLtuG4n3rzPNsIabtu7zS8ociw1VEabgs7Trw6OKLUK6VnRB7F50x5+Sa/xlMbUXC66DLoc0qyxyrtVqjSMauEpSiLVAoxg3oPRCLYQcUBgzhii2ECEYbxRbDPARQkyLFVu25v7oaZ7zP9lQqYTVcEzzT84qsGpou5/aI7hAE91lRw+Kc6wtzlJLdkSetV0NgOtxJHwVGvV1WuuVqbi6dRjwsV1mGkSZHclFoqBp4KSiZtK7mDHadLTEggFNymnUY2ajYPcdR8bBENIuV2FsRuqOLxpZpG2skB1gA7gCXEAE3jwUuOxwYQXAkmzG2GribmwAG5OyEOzc1BoFNjg52gse0kwTaxNyYNotHqOOS2PBkyfAVa7a4rdtrtWqoW6gYIDex/SEaa7rG6xDdPtAbz8kFoksDdFSoxjiYbrljO0Q0O1WERsB+HyDsU6tTNQtEufEyLd7h+HfvMSbKa2ewZez+oxq2r+jCvUjkfUJIVqxv09n/cuptcvQ5fN/VmtwuMNI6mHYEQeO3n9eS0mIwlOvTa6pcEBwGxEjb65LBjEQDNhB/esQW7/DvWs6IYg1KUO/A4tg7xuLeq7ZKtzljuAK+WNp1HBwsD2fAiQfh3SpWum0TbmfAi26N9JqHba+8FsED2eybTys73cEGpbSLxsL8fZcRykk+ACdcCvkkY2YM3PfMSLiNvLZRuoNnwsePj8ffyUrAe/wAP8CD8N/Jrqk7zebgHfjy4cuS1AD+TMFSgaZMxqYZjbhtawPuWL6SZT1lJ7RZ4BA39tlovt/davo9iYqBjvxCO4kSf+6yl6QYKHk37faEbAtEHz2PmUiVMez50FJ433HuWiy49c39X2nj2qe1QDm0bVG+F+5LOcCG1nNBsXPIkRADjz+tkNrYKHA03QRBEGCDANj3Xv3JdSkUjceAq2rBg2I3Bs4eIN1Ya5Vj0ir6OqxLGYhgNnWFQQdw+L+YnvUDcZhyZbUqU5/DUbIH8wGyDiWWauQuyFZpiOKG4cg+xWpu/nZPpIKshlYCdLT4OH90lFFlQVouRCjW2Wabi6o3aweNVoT25sRxb/LLh/usFmh/Fibeni5MmOGybi83DLAy7kPnyWUpVK1Sx1NafI+780TyrBBsxql3tGeHpulsGuxTU1F51Oe/cgTtsAOAHJFMrBc2zdJAntTqJ5Qeaq16D5DWOcAADBPviVHQxbqbh1hAA/EbSTtfj4JRG9wgKFWPZqaRb2O/wSx2IbTpSRpAu69/GOCYaLidTajmmb9ojV+Z8UOzXKnVg5r3Og95J7/BZAskwOZ0qz9DNRIEwWkT4HYotUaXDUTpDTcco3nis30fyQ4Rxc17iYhu2zkSzqsTha3aBIY8wCZkgzv5mU30DyYTNc2Naq55MCeyI9loMtaOXDzXKeMcTrE6+BHOIcdrk/NCC7hv9cPRSUHmeyTyHnb5ouJ6ePNppI0FHEQx41kxDhbc2kH3XRyjimOc4GSx8gEOIAmCOFgCAO6VlsC8xIAMW0kefmPz71dwNUgw4uLXw1wseYE6rEg3n33UWqPTjkUuTYRU/+K76/kSWf0P/APZp+lT80kAaMfy/D/0v4Xj/AAu/qK2PQ79nV/i/6SkkvQnwfGxL3Sf9lT/5g/6ln6uz/wCI/wBK6ktDgV8ncZufr8ar5n7R/iHzSSRYAhgv/UU//r/patNn+zP4wkkh3CeGdJv2zPB39QQbG+z/ADD4pJLmxcL97llyW8Pw8lDjuHh8l1JN3HYNGzkqX16BJJVYjCuUbefyRvMfZb/EP6HLqSmyy5Rpj7Z8AruF9n+YpJKJRHD+1P8Ayh/U1Us6/YHxb/Ukkt2B3L1L8Ph+Sn+vekksBFDMP21L+B3yQbNPYr/wP/oKSSaIe5gX7+a5TSSVGdUfiCOX7jzVxnsu8viF1JRketg7fYIpJJJTuP/Z" alt="Strawberry Shake">
+                <h5>Strawberry Shake</h5>
+                <p>Refreshing strawberry milkshake with ice cream.</p>
+                <button class="btn btn-primary order-btn">Order Now</button>
+            </div>
+        </div>
+
+        <!-- Ice Cream -->
+        <h3 class="text-info mt-3">Ice Cream</h3>
+        <div class="col-md-4">
+            <div class="menu-card">
+                <img src="https://thumbs.dreamstime.com/b/chocolate-ice-cream-sundae-syrup-rainbow-sprinkles-139314158.jpg" alt="Chocolate Ice Cream">
+                <h5>Chocolate Ice Cream</h5>
+                <p>Rich and creamy chocolate ice cream.</p>
+                <button class="btn btn-info order-btn">Order Now</button>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="menu-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeJg4Jo8npLB7oUNLpn1NsMGeAIKXvP2Dezw&s" alt="Vanilla Ice Cream">
+                <h5>Vanilla Ice Cream</h5>
+                <p>Smooth and creamy vanilla-flavored ice cream.</p>
+                <button class="btn btn-info order-btn">Order Now</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+
+           
+           
+        
+              
+<!-- Review Section -->
+<section id="review" class="section-padding bg-light text-center">
+    <div class="container">
+        <h2>Customer Reviews</h2>
+        <div class="row">
+            <div class="col-md-12">
+                <p>"Amazing food and quick service!" - Rahul</p>
+            </div>
+            <div class="col-md-12">
+                <p>"Love the QR ordering system, very convenient!" - Priya</p>
+            </div>
+            <div class="col-md-12">
+                <p>"Great variety and delicious meals." - Aakash</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section-padding text-center">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>www.feast.com</p>
+        <p>Email: scanfeast@gmail.com | Phone: +917358321918</p>
+        <p>chennai saidapet scanfeast cafe...</p>
+        
+    </div>
+</section>
+
+<!-- Footer -->
+<div class="footer">
+    <p>&copy; 2025 ScanFeast cafe. All Rights Reserved.</p><br>
+
+    
+</div>
+
+</body>
+</html>
